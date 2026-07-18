@@ -32,3 +32,11 @@ function random() {
     tekst.innerHTML = poruka;
     dugme.innerText = tekst2;
 }
+
+window.addEventListener('click', () => {
+    let pesma = document.querySelector(".muzika");
+    if(pesma.paused) {
+        pesma.play().catch(console.log("Pretraživač i dalje blokira auto-play:"));
+        
+    }
+})
